@@ -9,11 +9,12 @@ int main(void)
 
 	char i;
 	char f;
-	for(i = 97; i <= 122; i++)
+
+	for (i = 97; i <= 122; i++)
 	{
 		putchar(i);
 	}
-	for(f = 65; f <= 90; f++)
+	for (f = 65; f <= 90; f++)
 	{
 		putchar(f);
 	}
