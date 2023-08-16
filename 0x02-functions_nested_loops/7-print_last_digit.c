@@ -13,17 +13,12 @@ int print_last_digit(int a)
 	if ( a < 0)
 	{
 		a = -a;
-		lst_digit = a % 10;
-		_putchar(lst_digit + '0');
-		return (lst_digit);
 	}
-	else
-	{
-		lst_digit = a % 10;
-		_putchar(lst_digit + '0');
-		return (lst_digit);
 	
-	}
-
-
+	lst_digit = a % 10;
+		
+	_putchar(lst_digit + '0');
+		
+	
+	return lst_digit;
 }
