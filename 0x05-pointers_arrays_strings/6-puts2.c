@@ -12,10 +12,11 @@ void puts2(char *str)
 {
 	while (*str != '\0')
 	{
+		if (*str % 2 == 0)
+		{
 		printf("%c", *str);
-
-		str = str + 2;
-
+		}
+	str++;
 
 	}
 
