@@ -15,9 +15,9 @@ unsigned int i;
 	char *p1 = dest;
 	char const *p2 = src;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	for (i = 0; i < n ; i++)
 	{
-		p1[i] = p2[i];
+		*p1++ = *p2++;
 	}
 return (dest);
 
