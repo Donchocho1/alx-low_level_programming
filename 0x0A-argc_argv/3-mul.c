@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, a, b,  sum = 1;
+	int i, a, b, sum = 0;
 
 	for (i = 0; i < argc; i++)
 	{
@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("Error\n");
+		return (1);
 	}
 return (0);
 }
