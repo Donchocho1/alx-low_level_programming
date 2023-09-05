@@ -26,10 +26,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 	dest = ptr;
 	while (*str)
 	{
@@ -38,5 +34,9 @@ char *_strdup(char *str)
 		dest++;
 	}
 	*dest = '\0';
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 return (ptr);
 }
