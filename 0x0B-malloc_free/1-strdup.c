@@ -29,14 +29,14 @@ char *_strdup(char *str)
 	dest = ptr;
 	while (*str)
 	{
+		if (str == NULL)
+		{
+			return (NULL);
+		}
 		*dest = *str;
 		str++;
 		dest++;
 	}
 	*dest = '\0';
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 return (ptr);
 }
