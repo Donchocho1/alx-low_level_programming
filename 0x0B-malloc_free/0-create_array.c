@@ -22,14 +22,13 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+	if (size == 0)
+        {
+                return (NULL);
+        }
 	for (i = 0; i < size; i++)
 	{
 		str[i] = c;
 	}
 return (str);
-	if (size == 0)
-	{
-		return (NULL);
-	}
-
 }
