@@ -24,13 +24,16 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	for (counter = 0; counter < n; counter++)
 	{
 		convert_ascii = va_arg(args, char *);
-		if (convert_ascii != NULL)
+		if (convert_ascii == NULL)
 		{
+			printf("(nil)");
+		}
+		else	
 			printf("%s", convert_ascii);
-			if (counter != n - 1)
-			{
+
+		if (counter != n - 1)
+		{
 				printf("%s", seperator);
-			}
 		}
 	}
 	printf("\n");
