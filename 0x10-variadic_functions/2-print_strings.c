@@ -17,9 +17,6 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	va_list args;
 	char *convert_ascii;
 
-	if (seperator == NULL)
-		return;
-
 	va_start(args, n);
 	for (counter = 0; counter < n; counter++)
 	{
@@ -28,12 +25,12 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 		{
 			printf("(nil)");
 		}
-		else	
+		else
 			printf("%s", convert_ascii);
 
-		if (counter != n - 1)
+		if (counter != (n - 1) && seperator != NULL)
 		{
-				printf("%s", seperator);
+			printf("%s", seperator);
 		}
 	}
 	printf("\n");
