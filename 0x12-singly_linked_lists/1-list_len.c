@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_len - a function that returns the number of elements of a list_t list
+ * list_len - a function that returns the number of elements of a list_t list
  * @h: a pointer to a single linked list
  *
  * Return: number of count
