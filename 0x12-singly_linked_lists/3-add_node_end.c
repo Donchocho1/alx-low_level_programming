@@ -21,6 +21,11 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	new_element->str = strdup(str);
+	if (new_element->str == NULL)
+	{
+		free(new_element);
+		return (NULL);
+	}
 	new_element->len = strlen(str);
 	new_element->next = NULL;
 
