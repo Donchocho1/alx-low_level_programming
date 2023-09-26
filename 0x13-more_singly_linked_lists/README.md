@@ -1,1 +1,1 @@
-More single linked list to learn and get familiar with singly linked list
+More single linked list tasks to learn and get familiar with singly linked list
